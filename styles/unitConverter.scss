@@ -1,0 +1,65 @@
+@import './root.scss';
+
+.unit-converter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .unit-converter {
+        background: $color-white;
+        padding: 2rem;
+        box-shadow: 0 0 8px 0 rgba($color-navy-blue, 0.05);
+        margin-top: 3rem;
+        border-radius: 3px;
+
+        form {
+            .line {
+                margin-top: 2rem;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 100%;
+            }
+
+            .actions-container {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .result-group {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .unit-converter-section {
+        .unit-converter {
+            form {
+                flex-direction: column;
+
+                .result-group {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .actions-container {
+                    button {
+                        width: 100%;
+                    }
+
+                    .line {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import './root.scss';
+
+.simple-computations-section {
+    .simple-computations-form {
+        background-color: $color-white;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        .simple-computations-form-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+
+            .simple-computations-form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .simple-computations-form-subgroup {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .simple-computations-section {
+        .simple-computations-form {
+            .simple-computations-form-wrapper {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

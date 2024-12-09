@@ -1,0 +1,111 @@
+input::-moz-placeholder {
+  color: #777d95;
+}
+
+input::placeholder {
+  color: #777d95;
+}
+
+.hide {
+  display: none;
+}
+
+.section-header .title, .section-header .description {
+  text-align: center;
+}
+.section-header .title {
+  font-size: 2rem;
+  color: #10182f;
+}
+.section-header .description {
+  margin-top: 1rem;
+  color: #777d95;
+}
+
+.input-primary {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+}
+.label-input-group > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label-input-group > input, .label-input-group > select {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.button-primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #10182f;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #777d95;
+}
+
+.unit-converter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.unit-converter-section .unit-converter {
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0 8px 0 rgba(16, 24, 47, 0.05);
+  margin-top: 3rem;
+  border-radius: 3px;
+}
+.unit-converter-section .unit-converter form .line {
+  margin-top: 2rem;
+}
+.unit-converter-section .unit-converter form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.unit-converter-section .unit-converter form .actions-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.unit-converter-section .unit-converter form .result-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .unit-converter-section .unit-converter form {
+    flex-direction: column;
+  }
+  .unit-converter-section .unit-converter form .result-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .unit-converter-section .unit-converter form .actions-container button {
+    width: 100%;
+  }
+  .unit-converter-section .unit-converter form .actions-container .line {
+    display: none;
+  }
+}/*# sourceMappingURL=unitConverter.css.map */

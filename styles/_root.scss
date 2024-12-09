@@ -1,0 +1,77 @@
+$color-white: #ffffff;
+$color-pale-lavender: #f7f8fc;
+$color-navy-blue: #10182f;
+$color-blue: #2a6bfa;
+$color-slate-gray : #777d95;
+$color-gray: #a3a5ae;
+$color-red: #e35a58;
+$color-light-blue: #f3f7ff;
+$color-light-purple: #f9f3ff;
+$color-light-red: #fef2f2;
+$color-light-green: #eafbf3;
+
+input::placeholder {
+    color: $color-slate-gray;
+}
+
+.hide {
+    display: none;
+}
+
+.section-header {
+    .title, .description {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        color: $color-navy-blue;
+    }
+
+    .description {
+        margin-top: 1rem;
+        color: $color-slate-gray;
+    }
+}
+
+.input-primary {
+    padding: 1rem;
+    border: none;
+    background-color: $color-pale-lavender;
+}
+
+.label-input-group {
+    display: flex;
+    flex-direction: column;
+
+    > label {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    > input, > select {
+        padding: 1rem;
+        border: none;
+        background-color: $color-pale-lavender;
+    }
+}
+
+.button-primary {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    background: $color-navy-blue;
+    color: $color-white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: $color-slate-gray;
+}

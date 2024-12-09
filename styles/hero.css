@@ -1,0 +1,163 @@
+input::-moz-placeholder {
+  color: #777d95;
+}
+
+input::placeholder {
+  color: #777d95;
+}
+
+.hide {
+  display: none;
+}
+
+.section-header .title, .section-header .description {
+  text-align: center;
+}
+.section-header .title {
+  font-size: 2rem;
+  color: #10182f;
+}
+.section-header .description {
+  margin-top: 1rem;
+  color: #777d95;
+}
+
+.input-primary {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+}
+.label-input-group > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label-input-group > input, .label-input-group > select {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.button-primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #10182f;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #777d95;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-section .card-header .title {
+  text-align: center;
+  margin-top: 2rem;
+}
+.hero-section .card-header .description {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.hero-section .icon {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.hero-section .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+.hero-section .cards > * {
+  background-color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  min-height: 24rem;
+  box-shadow: 0 0 8px 0 rgba(16, 24, 47, 0.05);
+  border: none;
+  transition: all 100ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: #10182f;
+}
+.hero-section .cards > *:hover {
+  transform: translateY(-10px);
+}
+.hero-section .cards .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section .cards .unit-converter-card .card-wrapper .icon {
+  background: #f3f7ff;
+}
+.hero-section .cards .income-tax-calculator-card .card-wrapper .icon {
+  background: #f9f3ff;
+}
+.hero-section .cards .simple-calculations-card .card-wrapper .icon {
+  background: #fef2f2;
+}
+.hero-section .cards .payroll-calculator-card .card-wrapper .icon {
+  background: #eafbf3;
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-section .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-section .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+  }
+  .hero-section .cards .card {
+    min-height: auto;
+  }
+  .hero-section .cards .card .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hero-section .cards .card .card-wrapper div {
+    align-content: center;
+  }
+  .hero-section .cards .card .card-wrapper div h3, .hero-section .cards .card .card-wrapper div p {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero-section .cards .card .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .cards .card .card-wrapper .card-header .title, .hero-section .cards .card .card-wrapper .card-header .description {
+    text-align: center;
+  }
+}/*# sourceMappingURL=hero.css.map */

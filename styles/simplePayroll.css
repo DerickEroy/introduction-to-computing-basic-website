@@ -1,0 +1,165 @@
+input::-moz-placeholder {
+  color: #777d95;
+}
+
+input::placeholder {
+  color: #777d95;
+}
+
+.hide {
+  display: none;
+}
+
+.section-header .title, .section-header .description {
+  text-align: center;
+}
+.section-header .title {
+  font-size: 2rem;
+  color: #10182f;
+}
+.section-header .description {
+  margin-top: 1rem;
+  color: #777d95;
+}
+
+.input-primary {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+}
+.label-input-group > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label-input-group > input, .label-input-group > select {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.button-primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #10182f;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #777d95;
+}
+
+.simple-payroll-section .main-container {
+  margin-top: 2rem;
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0 8px 0 rgba(16, 24, 47, 0.05);
+  border-radius: 3px;
+}
+.simple-payroll-section .main-container #createPayrollForm .create-payroll-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.simple-payroll-section .main-container #createPayrollForm .create-payroll-form-wrapper .group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container #createPayrollButton, .simple-payroll-section .main-container #createPayrollForm .buttons-container #deletePayrollButton {
+  margin-left: 0;
+  margin-top: 0;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container #deletePayrollButton {
+  display: flex;
+  align-items: center;
+  background-color: #e35a58;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container #deletePayrollButton:hover + #payrollEntryIdToDelete {
+  width: 10rem;
+  padding: 1rem;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container #payrollEntryIdToDelete {
+  width: 0;
+  padding: 0;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+.simple-payroll-section .main-container #createPayrollForm .buttons-container #payrollEntryIdToDelete:hover {
+  width: 10rem;
+  padding: 1rem;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+.simple-payroll-section .main-container .payrollTableContainer {
+  display: grid;
+  width: 100%;
+  overflow-x: auto;
+}
+.simple-payroll-section .main-container .payrollTableContainer #payrollTable {
+  width: 100%;
+  text-align: left;
+  margin-top: 3rem;
+}
+.simple-payroll-section .main-container .payrollTableContainer #payrollTable thead {
+  background: #f7f8fc;
+}
+.simple-payroll-section .main-container .payrollTableContainer #payrollTable thead tr th {
+  padding: 1rem;
+}
+.simple-payroll-section .main-container .payrollTableContainer #payrollTable tbody tr td {
+  padding: 1rem;
+}
+.simple-payroll-section .main-container #noPayrollYet {
+  margin-top: 1rem;
+  padding: 3rem;
+  text-align: center;
+  border: 1px dashed #777d95;
+  color: #777d95;
+}
+
+@media only screen and (max-width: 767px) {
+  .simple-payroll-section .main-container #createPayrollForm .create-payroll-form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .simple-payroll-section .main-container #createPayrollForm .buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .simple-payroll-section .main-container #createPayrollForm .buttons-container button {
+    margin-right: 0;
+    width: 100%;
+  }
+  .simple-payroll-section .main-container #createPayrollForm .buttons-container #deletePayrollButton {
+    display: flex;
+    justify-content: center;
+  }
+  .simple-payroll-section .main-container #createPayrollForm .buttons-container #deletePayrollButton:hover + #payrollEntryIdToDelete {
+    width: 100%;
+  }
+  .simple-payroll-section .main-container #createPayrollForm .buttons-container #payrollEntryIdToDelete:hover {
+    width: 100%;
+  }
+}/*# sourceMappingURL=simplePayroll.css.map */

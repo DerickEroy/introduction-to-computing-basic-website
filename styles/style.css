@@ -1,0 +1,93 @@
+input::-moz-placeholder {
+  color: #777d95;
+}
+
+input::placeholder {
+  color: #777d95;
+}
+
+.hide {
+  display: none;
+}
+
+.section-header .title, .section-header .description {
+  text-align: center;
+}
+.section-header .title {
+  font-size: 2rem;
+  color: #10182f;
+}
+.section-header .description {
+  margin-top: 1rem;
+  color: #777d95;
+}
+
+.input-primary {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+}
+.label-input-group > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label-input-group > input, .label-input-group > select {
+  padding: 1rem;
+  border: none;
+  background-color: #f7f8fc;
+}
+
+.button-primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #10182f;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #777d95;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f8fc;
+  color: #10182f;
+  display: grid;
+  grid-template-columns: minmax(0, 1250px);
+  place-content: center;
+  min-height: 100vh;
+  padding: 3rem;
+}
+body main .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/hero.css">
+    <link rel="stylesheet" type="text/css" href="./styles/unitConverter.css">
+    <link rel="stylesheet" type="text/css" href="./styles/incomeTaxCalculator.css">
+    <link rel="stylesheet" type="text/css" href="./styles/simplePayroll.css">
+    <link rel="stylesheet" type="text/css" href="./styles/simpleComputations.css">
+
+    <script type="module" src="./js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div></div>
+        <div class="wrapper">
+
+            <!-- Hero -->
+            <section class="hero-section">
+                <header class="section-header">
+                    <h1 class="title">Basic Calculations Website</h1>
+                    <p class="description">Introduction to Computing</p>
+                </header>
+                <div class="cards">
+                    <a href="#unitConverterSection" class="unit-converter-card card">
+                        <article class="card-wrapper">
+                            <img class="icon" src="/assets/unit-converter.svg" alt="Card image">
+                            <div class="card-header">
+                                <h3 class="title">Unit Converter</h3>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#incomeTaxCalculatorSection" class="income-tax-calculator-card card">
+                        <article class="card-wrapper">
+                            <img class="icon" src="/assets/income-tax-calculator.svg" alt="Card image">
+                            <div class="card-header">
+                                <h3 class="title">Income Tax Calculator</h3>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#simpleCalculationsSection" class="simple-calculations-card card">
+                        <article class="card-wrapper">
+                            <img class="icon" src="/assets/simple-calculations.svg" alt="Card image">
+                            <div class="card-header">
+                                <h3 class="title">Nth Number Computations</h3>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#simplePayrollSection" class="payroll-calculator-card card">
+                        <article class="card-wrapper">
+                            <img class="icon" src="/assets/payroll-calculator.svg" alt="Card image">
+                            <div class="card-header">
+                                <h3 class="title">Simple Payroll</h3>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <button class="button-primary">Visit Manual</button>
+            </section>
+
+            <!-- Unit Converter -->
+            <section id="unitConverterSection" class="unit-converter-section">
+                <header class="section-header">
+                    <h1 class="title">Unit Converter</h1>
+                </header>
+                <div class="unit-converter">
+                    <form>
+                        <div class="form-group">
+                            <div class="label-input-group">
+                                <label for="unitConverterValue">Value</label>
+                                <input type="text" id="unitConverterValue" name="unitConverterValue" placeholder="Enter value" />
+                            </div>
+                            <div class="label-input-group">
+                                <label for="unitConverterUnit">Unit</label>
+                                <select id="unitConverterUnit">
+                                    <option>Celsius</option>
+                                    <option>Fahrenheit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="actions-container">
+                            <button id="unitConverterConvertButton" class="button-primary">Convert</button>
+                            <div class="line"></div>
+                        </div>
+                        <div class="result-group">
+                            <div class="label-input-group">
+                                <label for="unitConverterTo">To</label>
+                                <select id="unitConverterTo">
+                                    <option>Celsius</option>
+                                    <option>Fahrenheit</option>
+                                </select>
+                            </div>
+                            <div class="label-input-group">
+                                <label for="unitConverterResult">Result</label>
+                                <input type="text" id="unitConverterResult" name="unitConverterResult" placeholder="Result" disabled />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Income Tax Calculator -->
+            <section id="incomeTaxCalculatorSection" class="income-tax-calculator-section">
+                <header class="section-header">
+                    <h1 class="title">Income Tax Calculator</h1>
+                </header>
+                <form>
+                    <div class="label-input-group">
+                        <label for="income">Income</label>
+                        <input type="text" id="income" name="income" placeholder="Enter value" />
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <div class="result-container">
+                            <div class="label-input-group">
+                                <label for="tax">Tax</label>
+                                <input type="text" id="tax" name="tax" placeholder="0" disabled />
+                            </div>
+                            <div class="label-input-group">
+                                <label for="basis">Basis</label>
+                                <input type="text" id="basis" name="basis" placeholder="0" disabled />
+                            </div>
+                            <div class="label-input-group">
+                                <label for="excessRate">Excess Rate</label>
+                                <input type="text" id="excessRate" name="excessRate" placeholder="0" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Simple Computations -->
+            <section id="simpleCalculationsSection" class="simple-computations-section">
+                <header class="section-header">
+                    <h1 class="title">Nth Number Computations</h1>
+                </header>
+                <form class="simple-computations-form">
+                    <div class="simple-computations-form-wrapper">
+                        <div class="simple-computations-form-group">
+                            <div class="simple-computations-form-subgroup">
+                                <div class="label-input-group">
+                                    <label for="nthFactorial">Factorial</label>
+                                    <input type="number" id="nthFactorial" placeholder="Enter value" />
+                                </div>
+                                <input class="input-primary" id="nthFactorialResult" type="number" placeholder="Result" disabled />
+                            </div>
+                        </div>
+                        <div class="simple-computations-form-group">
+                            <div class="simple-computations-form-subgroup">
+                                <div class="label-input-group">
+                                    <label for="sumOfFirstNNumbers">Sum</label>
+                                    <input type="number" id="sumOfFirstNNumbers" placeholder="Enter value" />
+                                </div>
+                                <input class="input-primary" id="sumOfFirstNNumbersResult" type="number" placeholder="Result" disabled />
+                            </div>
+                        </div>
+                        <div class="simple-computations-form-group">
+                            <div class="simple-computations-form-subgroup">
+                                <div class="label-input-group">
+                                    <label for="averageOfFirstNNumbers">Average</label>
+                                    <input type="number" id="averageOfFirstNNumbers" placeholder="Enter value" />
+                                </div>
+                                <input class="input-primary" id="averageOfFirstNNumbersResult" type="number" placeholder="Result" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Simple Payroll -->
+            <section id="simplePayrollSection" class="simple-payroll-section">
+                <header class="section-header">
+                    <h1 class="title">Simple Payroll</h1>
+                </header>
+                <div class="main-container">
+                    <form id="createPayrollForm">
+                        <div class="create-payroll-form-wrapper">
+                            <div class="group-container">
+                                <div class="label-input-group">
+                                    <label for="employeeName">Employee Name</label>
+                                    <input id="employeeName" name="employeeName" placeholder="Employee Name" />
+                                </div>
+                                <div class="label-input-group">
+                                    <label for="daysWorked">Days Worked</label>
+                                    <input id="daysWorked" name="daysWorked" placeholder="Days Worked" />
+                                </div>
+                            </div>
+                            <div class="group-container">
+                                <div class="label-input-group">
+                                    <label for="dailyRate" >Daily Rate</label>
+                                    <input id="dailyRate" name="dailyRate" placeholder="Daily Rate" />
+                                </div>
+                                <div class="label-input-group">
+                                    <label for="deductionAmount">Deduction Amount</label>
+                                    <input id="deductionAmount" name="deductionAmount" placeholder="Deduction Amount" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-container">
+                            <button id="createPayrollButton" class="button-primary">Create</button>
+                            <button id="deletePayrollButton" class="button-primary">Delete</button>
+                            <input class="input-primary" type="number" id="payrollEntryIdToDelete" placeholder="No." />
+                            <div class="line"></div>
+                        </div>
+                    </form>
+                    <div class="payrollTableContainer">
+                        <table id="payrollTable">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Employee Name</th>
+                                    <th>Daily Rate</th>
+                                    <th>Days worked</th>
+                                    <th>Deduction Amount</th>
+                                    <th>Gross Pay</th>
+                                    <th>Net Pay</th>
+                                </tr>
+                            </thead>
+                            <tbody id="payrollTableBody">
+                            </tbody>
+                        </table>
+                        <p id="noPayrollYet">You do not have any payroll entries yet.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div></div>
+    </main>
+</body>
+</html>

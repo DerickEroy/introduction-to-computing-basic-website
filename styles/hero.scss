@@ -1,0 +1,149 @@
+@import './_root.scss';
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card-header {
+        .title {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .icon {
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+        margin-top: 3rem;
+
+        > * {
+            background-color: $color-white;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            min-height: 24rem;
+            box-shadow: 0 0 8px 0 rgba($color-navy-blue, 0.05);
+            border: none;
+            transition: all 100ms;  
+            cursor: pointer;
+            text-decoration: none;
+            color: $color-navy-blue;
+        }
+    
+        > *:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .unit-converter-card {
+            .card-wrapper {
+                .icon {
+                    background: $color-light-blue;
+                }
+            }
+        }
+
+        .income-tax-calculator-card {
+            .card-wrapper {
+                .icon {
+                    background: $color-light-purple;
+                }
+            }
+        }
+
+        .simple-calculations-card {
+            .card-wrapper {
+                .icon {
+                    background: $color-light-red;
+                }
+            }
+        }
+
+        .payroll-calculator-card {
+            .card-wrapper {
+                .icon {
+                    background: $color-light-green;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-section {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-section {
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 2rem;
+
+            .card {
+                min-height: auto;
+
+                .card-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+    
+                    div {
+                        align-content: center;
+    
+                        h3, p {
+                            text-align: left;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hero-section {
+        .cards {
+            .card {
+                .card-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .card-header {
+                        .title, .description {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
